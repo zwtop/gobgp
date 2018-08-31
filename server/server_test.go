@@ -117,6 +117,11 @@ func TestMonitor(test *testing.T) {
 				RemotePort: 10179,
 			},
 		},
+		Timers: config.Timers{
+			Config: config.TimersConfig{
+				ConnectRetry: 10,
+			},
+		},
 	}
 	err = t.AddNeighbor(m)
 	assert.Nil(err)
@@ -251,6 +256,11 @@ func TestNumGoroutineWithAddDeleteNeighbor(t *testing.T) {
 	// wait goroutines to finish (e.g. internal goroutine for
 	// InfiniteChannel)
 	time.Sleep(time.Second * 5)
+	for i := 0; i < 5; i++ {
+		if num == runtime.NumGoroutine() {
+			return
+		}
+	}
 	assert.Equal(num, runtime.NumGoroutine())
 }
 
@@ -487,6 +497,11 @@ func TestPeerGroup(test *testing.T) {
 				RemotePort: 10179,
 			},
 		},
+		Timers: config.Timers{
+			Config: config.TimersConfig{
+				ConnectRetry: 10,
+			},
+		},
 	}
 	err = t.AddNeighbor(m)
 	assert.Nil(err)
@@ -552,6 +567,11 @@ func TestDynamicNeighbor(t *testing.T) {
 		Transport: config.Transport{
 			Config: config.TransportConfig{
 				RemotePort: 10179,
+			},
+		},
+		Timers: config.Timers{
+			Config: config.TimersConfig{
+				ConnectRetry: 10,
 			},
 		},
 	}
@@ -627,6 +647,11 @@ func TestGracefulRestartTimerExpired(t *testing.T) {
 			Config: config.GracefulRestartConfig{
 				Enabled:     true,
 				RestartTime: 1,
+			},
+		},
+		Timers: config.Timers{
+			Config: config.TimersConfig{
+				ConnectRetry: 10,
 			},
 		},
 	}
