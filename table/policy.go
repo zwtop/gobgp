@@ -30,7 +30,7 @@ import (
 	"github.com/osrg/gobgp/packet/bgp"
 
 	radix "github.com/armon/go-radix"
-	log "github.com/sirupsen/logrus"
+	log "github.com/Sirupsen/logrus"
 )
 
 type PolicyOptions struct {

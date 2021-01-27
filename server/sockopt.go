@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"net"
 
-	log "github.com/sirupsen/logrus"
+	log "github.com/Sirupsen/logrus"
 )
 
 func SetTcpMD5SigSockopt(l *net.TCPListener, address string, key string) error {

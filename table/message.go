@@ -20,7 +20,7 @@ import (
 	"reflect"
 
 	"github.com/osrg/gobgp/packet/bgp"
-	log "github.com/sirupsen/logrus"
+	log "github.com/Sirupsen/logrus"
 )
 
 func UpdatePathAttrs2ByteAs(msg *bgp.BGPUpdate) error {

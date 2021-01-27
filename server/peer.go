@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"github.com/eapache/channels"
-	log "github.com/sirupsen/logrus"
+	log "github.com/Sirupsen/logrus"
 
 	"github.com/osrg/gobgp/config"
 	"github.com/osrg/gobgp/packet/bgp"

@@ -25,7 +25,7 @@ import (
 
 	"github.com/eapache/channels"
 	uuid "github.com/satori/go.uuid"
-	log "github.com/sirupsen/logrus"
+	log "github.com/Sirupsen/logrus"
 
 	"github.com/osrg/gobgp/config"
 	"github.com/osrg/gobgp/packet/bgp"

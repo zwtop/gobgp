@@ -24,7 +24,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	log "github.com/sirupsen/logrus"
+	log "github.com/Sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 
 	"github.com/osrg/gobgp/config"

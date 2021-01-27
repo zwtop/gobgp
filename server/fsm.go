@@ -29,7 +29,7 @@ import (
 	"github.com/osrg/gobgp/table"
 
 	"github.com/eapache/channels"
-	log "github.com/sirupsen/logrus"
+	log "github.com/Sirupsen/logrus"
 	"gopkg.in/tomb.v2"
 )
 

@@ -26,8 +26,8 @@ import (
 	"strings"
 	"syscall"
 
-	log "github.com/sirupsen/logrus"
-	lSyslog "github.com/sirupsen/logrus/hooks/syslog"
+	log "github.com/Sirupsen/logrus"
+	lSyslog "github.com/Sirupsen/logrus/hooks/syslog"
 )
 
 func init() {

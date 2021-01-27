@@ -24,7 +24,7 @@ import (
 
 	"github.com/armon/go-radix"
 	"github.com/osrg/gobgp/packet/bgp"
-	log "github.com/sirupsen/logrus"
+	log "github.com/Sirupsen/logrus"
 )
 
 type LookupOption uint8

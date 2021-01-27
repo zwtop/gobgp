@@ -25,7 +25,7 @@ import (
 	"time"
 
 	"github.com/armon/go-radix"
-	log "github.com/sirupsen/logrus"
+	log "github.com/Sirupsen/logrus"
 	"golang.org/x/net/context"
 
 	"github.com/osrg/gobgp/config"

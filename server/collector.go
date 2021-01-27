@@ -20,7 +20,7 @@ import (
 	"github.com/influxdata/influxdb/client/v2"
 	"github.com/osrg/gobgp/packet/bgp"
 	"github.com/osrg/gobgp/table"
-	log "github.com/sirupsen/logrus"
+	log "github.com/Sirupsen/logrus"
 	"time"
 )
 

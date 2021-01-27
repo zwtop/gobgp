@@ -29,7 +29,7 @@ import (
 
 	farm "github.com/dgryski/go-farm"
 	"github.com/golang/protobuf/ptypes/any"
-	log "github.com/sirupsen/logrus"
+	log "github.com/Sirupsen/logrus"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 

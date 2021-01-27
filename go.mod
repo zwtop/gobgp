@@ -13,7 +13,7 @@ require (
 	github.com/jessevdk/go-flags v1.4.0
 	github.com/kr/pretty v0.1.0
 	github.com/satori/go.uuid v1.2.0
-	github.com/sirupsen/logrus v1.7.0
+	github.com/Sirupsen/logrus v0.8.8-0.20160119000032-f7f79f729e0f
 	github.com/spf13/cobra v0.0.3
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/spf13/viper v1.7.1
