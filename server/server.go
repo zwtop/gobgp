@@ -1597,7 +1597,7 @@ func (s *BgpServer) AddPath(vrfId string, pathList []*table.Path) (uuidBytes []b
 		}
 		if len(pathList) == 1 {
 			path := pathList[0]
-			id, _ := uuid.NewV4()
+			id := uuid.NewV4()
 			s.uuidMap[id] = pathTokey(path)
 			uuidBytes = id.Bytes()
 		}
